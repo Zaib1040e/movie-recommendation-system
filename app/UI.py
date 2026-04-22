@@ -64,7 +64,7 @@ img:hover {
     st.markdown("<p style='text-align:center; color:gray;'>Discover movies you’ll love instantly</p>", unsafe_allow_html=True)
 
     # Load data
-    movies_dict = pickle.load(open('data/processed/movies.pkl', 'rb'))
+    movies_dict = pickle.load(open('srccode/movies.pkl', 'rb'))
     movies = pd.DataFrame(movies_dict)
 
     selected_movie = st.selectbox(
