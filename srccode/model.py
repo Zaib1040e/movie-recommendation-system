@@ -32,6 +32,7 @@ vectors=cv.fit_transform(movies['tags']).toarray()
 '''Here The Logic Is to Find the Closness between every movie to the selected one using cosine angle  '''
 similarity=cosine_similarity(vectors)
 
+similarity = similarity.astype(np.float32)
 
 '''Pickle Helps The Data To Just Load Once And Give Results Fast Every Time'''
 pickle.dump(movies, open('data/processed/movies.pkl', 'wb'))
