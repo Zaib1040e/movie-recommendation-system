@@ -3,8 +3,8 @@ import pandas as pd
 import pickle
 
 
-movies = pickle.load(open('data/processed/movies.pkl', 'rb'))
-similarity = pickle.load(open('data/processed/similarity.pkl', 'rb'))
+movies = pickle.load(open('srccode/movies.pkl', 'rb'))
+similarity = pickle.load(open('srccode/similarity.pkl', 'rb'))
 
 # movies=pd.read_csv(r"data/processed/clean_movie_data.csv",encoding="latin1")
 
